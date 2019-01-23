@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏设置</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="css/jtoggler.styles.css">
+    <style>
+        .jtoggler-control {
+            background: #e5e5e5 !important;
+        }
+
+        main form .row {
+            width: 100%;
+            overflow: hidden;
+            font-size: 0.8rem;
+            margin: 0.5rem 0;
+        }
+
+        main form .row span {
+            vertical-align:top;
+        }
+
+        main form .row input[type='checkbox'] {
+            background-color: #FFF;
+            border: 0.05rem solid #c9c9c9;
+            border-radius: 0.1rem;
+            outline: none;
+            width: 1rem;
+            height: 1rem;
+            
+        }
+
+        main form .row p {
+            border-top: 0.05rem solid #c9c9c9;
+            border-bottom: 0.05rem solid #c9c9c9;
+            margin: 0.1rem 0;
+            padding: 0.1rem 0;
+        }
+
+        main form .row p input {
+            width: 100%;
+            border: none;
+            font-size: 0.8rem;
+            background: none;
+        }
+
+        main form .row .col {
+            width: 32%;
+            display: inline-block;
+        }
+
+        main form .row .col p {
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+
+        main form .row .col input {
+            width: 100%;
+            font-size: 0.8rem;
+            text-align: center;
+            background: #f5f5f5;
+            padding: 0.2rem 0;
+            margin-top: 0.3rem; 
+            border: 0.05rem solid #c9c9c9;
+            border-radius: 0.3rem;
+        }
+
+        main form .row label.row-item-f {
+            margin: 0.5rem 0;
+            display: inline-block;
+            width: 24%;
+            height: 1rem;
+        }
+
+        main form .row .row-item-f .set-checkbox{
+            display: none;
+        }
+
+        main form .row .row-item-f .checkbox {
+            background-color: #fff;
+            border: 0.01px solid #009788;
+            border-radius: 0.1rem;
+            display:inline-block;
+            height: 1rem;
+            margin-top: -0.2rem;
+            vertical-align: middle;
+            width: 1rem;
+        }
+
+        main form .row .row-item-f .set-checkbox:checked + .checkbox:after {
+            background-color: #009788;
+            border-radius: 0.05rem;
+            content: "\2714";
+            color: #FFF;
+            text-align: center;
+            display: inline-block;
+            height: 1rem;
+            width: 1rem;
+        }
+
+        main form .row .row-item-f .set-checkbox:checked + .checkbox {
+            border:2px solid #009788;
+        }
+
+        main form .row label.row-item-s {
+            margin: 0.5rem 0;
+            display: inline-block;
+            width: 24%;
+            height: 1rem;
+        }
+
+        main form .row .row-item-s .set-checkbox{
+            display: none;
+        }
+
+        main form .row .row-item-s .checkbox {
+            background-color: #fff;
+            border: 0.01px solid #009788;
+            border-radius:100%;
+            display:inline-block;
+            height: 1rem;
+            margin-top: -0.2rem;
+            vertical-align: middle;
+            width: 1rem;
+        }
+
+        main form .row .row-item-s .set-checkbox:checked + .checkbox:after {
+            background-color: #009788;
+            border-radius: 100%;
+            content: "\2714";
+            color: #FFF;
+            text-align: center;
+            display: inline-block;
+            height: 1rem;
+            width: 1rem;
+        }
+
+        main form .row .row-item-s .set-checkbox:checked + .checkbox {
+            border:2px solid #009788;
+        }
+
+        main form .row p.row-checkbox-p {
+            margin: 0;
+            color: red;
+            border: none;
+            padding: 0;
+            display: inline-block;
+            font-size: 0.6rem;
+        }
+
+        main form button {
+            display: block;
+            width: 40%;
+            margin: 0 auto 1rem auto;
+            padding: 0.1rem 0;
+            background: none;
+            border: 0.05rem solid #009788;
+            border-radius: 10px;
+            color: #009788;
+            font-size: 0.8rem;
+        }
+
+        main form p.tip {
+            color: black;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-size: 0.7rem;
+        }
+
+
+    </style>
+</head>
+
+<body style="background: #f5f5f5;">
+    <header>
+        <a href="javascript:history.go(-1);">&lt;</a>
+        <p>游戏设置</p>
+        <a href="./activation.html">授权</a>
+    </header>
+    <main>
+        <form action="">
+            <div class="row">
+                <label for="">基础服务</label>
+                <input type="checkbox" class="jtoggler">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>单价：</p>
+                    <input type="number">
+                </div>
+                <div class="col">
+                    <p>取货：</p>
+                    <input type="number">
+                </div>
+                <div class="col">
+                    <p>送货：</p>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>接单延迟：</p>
+                    <input type="number">
+                </div>
+                <div class="col">
+                    <p>接单量：</p>
+                    <input type="number">
+                </div>
+                <div class="col">
+                    <p>刷新：</p>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="row">
+                <label class="row-item-f">排除项
+                    <input class="set-checkbox" type="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <p><input type="text"></p>
+            </div>
+            <div class="row">
+                <label class="row-item-f">取货点
+                    <input class="set-checkbox" type="checkbox" value='取货点' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <p><input type="text"></p>
+            </div>
+            <div class="row">
+                <label class="row-item-f">送货东
+                    <input class="set-checkbox" type="checkbox" value='送货东' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <p><input type="text"></p>
+            </div>
+            <div class="row">
+                <label class="row-item-f">送货西
+                    <input class="set-checkbox" type="checkbox" value='送货西' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <p><input type="text"></p>
+            </div>
+            <div class="row">
+                <label class="row-item-f">送货南
+                    <input class="set-checkbox" type="checkbox" value='送货南' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <p><input type="text"></p>
+            </div>
+            <div class="row">
+                <label class="row-item-f">送货北
+                    <input class="set-checkbox" type="checkbox" value='送货北' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <p><input type="text"></p>
+            </div>
+            <div class="row">
+                <label class="row-item-s">自动确认
+                    <input class="set-checkbox" type="checkbox" value='自动确认' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <label class="row-item-s">秒帮买单
+                    <input class="set-checkbox" type="checkbox" value='秒帮买单' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <label class="row-item-s">秒帮送单
+                    <input class="set-checkbox" type="checkbox" value='秒帮送单' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <label class="row-item-s">滑动翻页
+                    <input class="set-checkbox" type="checkbox" value='滑动翻页' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <label class="row-item-s">铃声提示
+                    <input class="set-checkbox" type="checkbox" value='铃声提示' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <label class="row-item-s">快速模式
+                    <input class="set-checkbox" type="checkbox" value='快速模式' name="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <p class="row-checkbox-p">要求手机性能良好，否则由抢错可能</p>
+            </div>
+            <p class="tip">良好运行于：3.0.1.381</p>
+            <button type="submit">保存设置</button>
+        </form>
+    </main>
+    <script src="./js/font.js"></script>
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/jtoggler.js" type="text/javascript"></script>
+    <script src="js/btntoggler.js" type="text/javascript"></script>
+</body>
+
+</html>

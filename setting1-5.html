@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏设置</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/setting.css">
+    <link rel="stylesheet" href="css/jtoggler.styles.css">
+    <style>
+        main form button {
+            display: block;
+            width: 40%;
+            margin: 0 auto 1rem auto;
+            padding: 0.1rem 0;
+            background: none;
+            border: 0.05rem solid #009788;
+            border-radius: 10px;
+            color: #009788;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body style="background: #f5f5f5;">
+    <header>
+        <a href="javascript:history.go(-1);">&lt;</a>
+        <p>游戏设置</p>
+        <a href="./activation.html">授权</a>
+    </header>
+    <main>
+        <form action="">
+            <div class="row">
+                <label for="gameType">指定车型</label>
+                <input class="input-text" type="text" name="gameType" id="gameType" placeholder="不限">
+            </div>
+            <div class="row">
+                <label for="linkID">游戏ID</label>
+                <input class="input-text" type="text" name="linkID" id="linkID" placeholder="请输入您的游戏ID">
+            </div>
+            <div class="row">
+                <label for="date">日期</label>
+                <input type="checkbox" class="jtoggler">
+                <input class="input-middle input-date" type="text" name="date" id="date">
+            </div>
+            <div class="row">
+                <label for="Sdate">开始时间</label>
+                <input type="checkbox" class="jtoggler">
+                <input class="input-middle input-date" type="text" name="Sdate" id="Sdate">
+            </div>
+            <div class="row">
+                <label for="Edate">结束时间</label>
+                <input type="checkbox" class="jtoggler">
+                <input class="input-middle input-date" type="text" name="Edate" id="Edate">
+            </div>
+            <div class="row">
+                <label for="Edate">开始地点</label>
+                <input type="checkbox" class="jtoggler">
+                <input class="input-middle" type="text">
+            </div>
+            <div class="row">
+                <label for="Edate">结束地点</label>
+                <input type="checkbox" class="jtoggler">
+                <input class="input-middle" type="text">
+            </div>
+            <div class="row">
+                <label for="Edate">服务距离</label>
+                <input type="checkbox" class="jtoggler">
+                <input class="input-middle" type="text">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="dianpao">自动抢单</label>
+                    <input type="checkbox" class="jtoggler">
+                </div>
+                <div class="col">
+                    <label for="dianpao">手动抢单</label>
+                    <input type="checkbox" class="jtoggler">
+                </div>
+            </div>
+            <div class="row">
+                <label for="dianpao">滴滴快车</label>
+                <input type="checkbox" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="dianpao">滴滴顺风车</label>
+                <input type="checkbox" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="dianpao">滴滴专车</label>
+                <input type="checkbox" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="dianpao">出租车快车</label>
+                <input type="checkbox" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="dianpao">出租车预约</label>
+                <input type="checkbox" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="dianpao">客单价</label>
+                <input type="checkbox" class="jtoggler">
+                <div class="row-middle">
+                    <input type="text"> - 
+                    <input type="text"> 元
+                    无限制
+                </div>
+            </div>
+            <button type="submit">保存设置</button>
+        </form>
+    </main>
+    <script src="./js/font.js"></script>
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/jtoggler.js" type="text/javascript"></script>
+    <script src="js/btntoggler.js" type="text/javascript"></script>
+    <script src="js/laydate/laydate.js"></script>
+    <script>
+        laydate.render({
+            elem: '#date' //指定元素
+        });
+        laydate.render({
+            elem: '#Sdate' //指定元素
+        });
+        laydate.render({
+            elem: '#Edate' //指定元素
+        });
+    </script>
+</body>
+
+</html>

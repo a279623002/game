@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏设置</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/setting.css">
+    <link rel="stylesheet" href="css/jtoggler.styles.css">
+    <style>
+        main form .showFlat {
+            margin-top: 10rem;       
+        }
+    </style>
+</head>
+
+<body style="background: #f5f5f5;">
+    <!-- 页面的遮罩层 -->
+    <div id="cover" onclick="closeFlat()"></div>
+    <header>
+        <a href="javascript:history.go(-1);">&lt;</a>
+        <p>游戏设置</p>
+        <a href="./activation.html">授权</a>
+    </header>
+    <main>
+        <form action="">
+            <div class="showFlat" id="wzry">
+                <label class="row-flat">
+                    <input class="flat-radio" type="radio" name="flat-radio" value='自定义设置' checked>
+                    <span class="flat-radioInput"></span>自定义设置
+                </label>
+                <label class="row-flat">
+                    <input class="flat-radio" type="radio" value='王者荣耀' name="flat-radio">
+                    <span class="flat-radioInput"></span>王者荣耀
+                </label>
+            </div>
+
+            <div class="row">
+                <label>游戏平台</label>
+                <p class="input-text wzry" onclick="showWzry()">请选择</p>
+            </div>
+            <div class="row">
+                <label for="linkID">连接ID</label>
+                <input class="input-text" type="text" name="linkID" id="linkID" placeholder="连接ID">
+            </div>
+            <div class="row">
+                <label for="autoplay">自动代打</label>
+                <input type="checkbox" id="autoplay" name="autoplay" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="autoflash">自动刷成就</label>
+                <input type="checkbox" id="autoflash" name="autoflash" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="perspective">全场透视</label>
+                <input type="checkbox" id="perspective" name="perspective" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="money">金币充值</label>
+                <input class="input-text" type="text" name="money" id="money" placeholder="请输入数额">
+            </div>
+            <div class="row">
+                <label for="stamps">点券充值</label>
+                <input class="input-text" type="text" name="stamps" id="stamps" placeholder="请输入数额">
+            </div>
+            <div class="row">
+                <label for="diamond">钻石充值</label>
+                <input class="input-text" type="text" name="diamond" id="diamond" placeholder="请输入数额">
+            </div>
+            <div class="row">
+                <label for="check">防检测</label>
+                <input type="checkbox" id="check" name="check" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="stealing">防封号</label>
+                <input type="checkbox" id="stealing" name="stealing" class="jtoggler">
+            </div>
+            <button type="submit">启动游戏</button>
+            <p>温馨提示：请把握次数，低调娱乐！</p>
+        </form>
+    </main>
+    <script src="./js/font.js"></script>
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/jtoggler.js" type="text/javascript"></script>
+    <script src="js/showFlat.js" type="text/javascript"></script>
+    <script src="js/btntoggler.js" type="text/javascript"></script>
+</body>
+
+</html>

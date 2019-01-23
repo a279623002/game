@@ -1,0 +1,62 @@
+main form {
+    width: 90%;
+    max-width: 576px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+main form p {
+    margin: 2%;
+    font-size: 0.8rem;
+}
+
+main form input {
+    width: 60%;
+    min-height: 30px;
+    border: 2px solid #e70a19;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 0 5%;
+    margin: 5% 0;
+}
+
+main form button {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 3% 0;
+    background: #e51c24;
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 0.8rem;
+}
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer .footer-info {
+    text-align: center;
+    color: #82def7;
+    font-size: 1.2rem;
+}
+
+footer .footer-info span {
+    text-indent: 2;
+    font-size: 0.3rem;
+    display: block;
+}
+
+footer .footer-notice h1 {
+    font-size: 1.2rem;
+    color: #eb0008;
+    margin: 30px 0 10px 0;
+}
+
+footer .footer-notice p {
+    font-size: 0.8rem;
+    color: #737373;
+    margin: 0;
+}

@@ -1,0 +1,172 @@
+main form {
+    width: 100%;
+    max-width: 576px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#cover{ 
+    position:absolute;
+    left:0px;
+    top:0px;
+    background:rgba(0, 0, 0, 0.4);
+    width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+    height:110%;
+    filter:alpha(opacity=60);  /*设置透明度为60%*/
+    opacity:0.6;  /*非IE浏览器下设置透明度为60%*/
+    display:none; 
+    z-Index:999;  
+}
+
+main form .showFlat {
+    position: fixed;
+    z-index: 9999;
+    margin-top: 2rem;
+    left: 10%;
+    width: 80%;
+    background: #FFF;
+    display: none;
+    max-height: 90%;
+    overflow: auto;
+}
+
+main form .showFlat::-webkit-scrollbar {
+    display: none;
+}
+
+main form .showFlat .row-flat {
+    padding: 5%;
+    display: block;
+    border-bottom: 0.05rem solid #e5e5e5;
+}
+
+main form .showFlat .row-flat:last-child {
+    border: none;
+}
+
+main form .showFlat .row-flat .flat-radio {
+    display: none;
+}
+
+main form .showFlat .row-flat .flat-radioInput {
+    background-color: #fff;
+    border: 2px solid #009788;
+    border-radius:100%;
+    display:inline-block;
+    height: 2rem;
+    margin-top: -0.5rem;
+    vertical-align: middle;
+    width: 2rem;
+    line-height: 1;
+    float: right;
+}
+
+main form .showFlat .row-flat .flat-radio:checked + .flat-radioInput:after {
+    background-color: #009788;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 1.6rem;
+    margin-left: 0.22rem;
+    margin-top: 0.22rem;
+    width: 1.6rem;
+}
+
+main form .showFlat .row-flat .flat-radio:checked + .flat-radioInput {
+    border:2px solid #009788;
+}
+
+main form .row {
+    width: 94%;
+    background: #FFF;
+    margin-bottom: 1%;
+    padding: 3%;
+    border-bottom: 0.05rem solid #e5e5e5; 
+}
+
+main form .row input.input-middle {
+    font-size: 0.8rem;
+    width: 7.7rem;
+    margin-right: 1rem;
+    padding: 0.3rem;
+    background: #FFF;
+    border: 0.05rem solid #e5e5e5;
+    border-radius: 0.5rem;
+    float: right;
+}
+
+main form .row input.input-date {
+    border: none;
+}
+
+main form .row .row-middle {
+    float: right;
+    font-size: 0.6rem;
+    margin-right: 0.1rem;
+}
+
+main form .row .row-middle input {
+    font-size: 0.6rem;
+    width: 2.2rem;
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
+    padding: 0.3rem;
+    background: #FFF;
+    border: 0.05rem solid #e5e5e5;
+    border-radius: 0.5rem;
+}
+
+main form .row .col {
+    width: 49%;
+    display: inline-block;
+}
+
+main form .row .col label {
+    display: inline-block;
+}
+
+main form .row label {
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+main form .row input.input-text {
+    font-size: 0.8rem;
+    width: 65%;
+    padding: 2%;
+    background: #FFF;
+    border: 0.05rem solid #e5e5e5;
+    border-radius: 5px;
+    float: right;
+    margin-top: -0.2rem;
+}
+
+main form .row p.input-text {
+    font-size: 0.8rem;
+    width: 65%;
+    padding: 2%;
+    background: #FFF;
+    border: 0.05rem solid #e5e5e5;
+    border-radius: 5px;
+    display: inline-block;
+    color: black;
+    float: right;
+}
+
+main form button {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    background: none;
+    border: 0.05rem solid #e51c24;
+    border-radius: 0.3rem;
+    color: #e51c24;
+    font-size: 0.8rem;
+}
+
+main form p {
+    color: #e51c24;
+    font-size: 0.8rem;
+    margin: 0;
+}

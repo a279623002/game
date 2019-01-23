@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏设置</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/setting.css">
+    <link rel="stylesheet" href="css/jtoggler.styles.css">
+</head>
+
+<body style="background: #f5f5f5;">
+    <!-- 页面的遮罩层 -->
+    <div id="cover" onclick="closeFlat()"></div>
+    <header>
+        <a href="javascript:history.go(-1);">&lt;</a>
+        <p>游戏设置</p>
+        <a href="./activation.html">授权</a>
+    </header>
+    <main>
+        <form action="">
+            <div class="showFlat" id="custom">
+                <label class="row-flat">
+                    <input class="flat-radio" type="radio" name="flat-radio" value='自定义设置' checked>
+                    <span class="flat-radioInput"></span>自定义设置
+                </label>
+                <label class="row-flat">
+                    <input class="flat-radio" type="radio" value='呱呱游戏平台' name="flat-radio">
+                    <span class="flat-radioInput"></span>呱呱游戏平台
+                </label>
+                <label class="row-flat">
+                    <input class="flat-radio" type="radio" value='闲来游戏平台' name="flat-radio">
+                    <span class="flat-radioInput"></span>闲来游戏平台
+                </label>
+                <label class="row-flat">
+                    <input class="flat-radio" type="radio" value='逍遥游戏平台' name="flat-radio">
+                    <span class="flat-radioInput"></span>逍遥游戏平台
+                </label>
+            </div>
+
+            <div class="row">
+                <label>游戏平台</label>
+                <p class="input-text custom" onclick="showCustom()">自定义设置</p>
+            </div>
+            <div class="row">
+                <label for="gameType">添加类型</label>
+                <input class="input-text" type="text" name="gameType" id="gameType" placeholder="请输入要玩的游戏名称">
+            </div>
+            <div class="row">
+                <label for="linkID">连接ID</label>
+                <input class="input-text" type="text" name="linkID" id="linkID" placeholder="连接ID">
+            </div>
+            <div class="row">
+                <label for="stealing">防封号</label>
+                <input type="checkbox" id="stealing" name="stealing" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="check">防检测</label>
+                <input type="checkbox" id="check" name="check" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="quanneng">全能机器人</label>
+                <input type="checkbox" id="quanneng" name="quanneng" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="tuoguan">机器人智能托管</label>
+                <input type="checkbox" id="tuoguan" name="tuoguan" class="jtoggler">
+            </div>
+            <div class="row">
+                <label for="banorther">强制禁止别人开挂</label>
+                <input type="checkbox" id="banorther" name="banorther" class="jtoggler">
+            </div>
+            <button type="submit">启动游戏</button>
+        </form>
+    </main>
+    <script src="./js/font.js"></script>
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/jtoggler.js" type="text/javascript"></script>
+    <script src="js/showFlat.js" type="text/javascript"></script>
+    <script src="js/btntoggler.js" type="text/javascript"></script>
+</body>
+
+</html>
